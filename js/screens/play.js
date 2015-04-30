@@ -21,6 +21,7 @@ game.PlayScreen = me.ScreenObject.extend({
         var SpendGold = me.pool.pull("SpendGold", 0, 0, {});
         me.game.world.addChild(SpendGold, 0);
         
+        //in this u can buy skills and use them in ur gaame 
         me.input.bindKey(me.input.KEY.B, "buy");
         me.input.bindKey(me.input.KEY.Q, "skill1");
         me.input.bindKey(me.input.KEY.W, "skill2");
