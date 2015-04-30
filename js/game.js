@@ -4,11 +4,17 @@ var game = {
     data: {
         // score
         score: 0,
+        //health of enemy base
         enemyBaseHealth: 1,
+        //health of player base
         playerBaseHealth: 1,
+        //enemy creep health
         enemyCreepHealth: 3,
+        //the players health
         playerHealth: 15,
+        //the attack of the enemy creep aka damage
         enemyCreepAttack: 1,
+        //the attack of the player 
         playerAttack: 1,
         //orcBaseDamage: 10,
         //orcBaseHealth: 100,
@@ -16,7 +22,9 @@ var game = {
         //orcBaseDefense: 0,
         playerAttackTimer: 1000,
         enemyCreepAttackTimer: 1000,
+        //the speed of the player or user
         playerMoveSpeed: 5,
+        //the speed of the creeper
         creepMoveSpeed: 5,
         gameTimerManager: "",
         heroDeathManager: "",
@@ -37,7 +45,7 @@ var game = {
         pausePos: "",
         buyscreen: "",
         buyText: ""
-   },
+    },
     // Run on page load.
     "onload": function() {
         // Initialize the video.
